@@ -8,7 +8,7 @@ You can use `<shift>-<ctrl>-p>` and the Simple Browser command in VS Code to vie
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/podcast-annotate-image.git
+   git clone https://github.com/dermotte/podcast-annotate-image
    ```
 2. Install dependencies:
    ```
