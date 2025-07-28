@@ -33,7 +33,7 @@ In the developer tab, allow connections to the server. Make sure the model is ru
 
 Once the app is running, open the provided local URL in your browser. Upload an image, and the model will generate an annotation or description for it.
 
-## Steps
+# Health, AI & Gamification Hackathon (HIGH)
 
 This series is part of the preparation for the Health, AI, and Gamification Hackathon, or in short, HIGH. It’s taking place at the ACM Multimedia 2025 conference in Dublin. We're creating these projects to help participants like you gear up for this exciting 48-hour event where we'll be crafting innovative games to address global health challenges using multimodal AI. If you're hearing about this event for the first time, please check out our web page and our Discord server! We'd love to have you there!
 
