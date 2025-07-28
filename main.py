@@ -13,7 +13,6 @@ Constraints:
 - Describe the image on a factual level.
 - Be as descriptive as possible while keeping the amount of characters in the limit."""
 
-
 def analyze(image_path):
     model = lms.llm("gemma-3-4b-it-qat")
     # model = lms.llm("qwen2.5-vl-3b-instruct")
@@ -26,19 +25,13 @@ def analyze(image_path):
     prediction = model.respond(chat)
     return prediction
 
-
 # simple interface
 # demo = gr.Interface(fn=analyze, inputs=gr.Image(type="filepath"), outputs=gr.TextArea())
 
-with gr.Blocks(title="Image Annotation App", theme=gr.themes.Ocean()) as demo:  # type: ignore
+with gr.Blocks(title="Image Annotation App", theme=gr.themes.Ocean()) as demo: # type: ignore
     gr.HTML("<h1>Simple Gradio App for Image Annotation</h1>")
     with gr.Row():
-        inp = gr.Image(
-            label="Input Image",
-            type="filepath",
-            sources=["upload", "clipboard"],
-            height=640,
-        )
+        inp = gr.Image(label="Input Image", type="filepath", sources=["upload", "clipboard"], height=640)
         out = gr.Textbox(label="Annotation Output", max_lines=22)
     btn = gr.Button("Run")
     btn.click(fn=analyze, inputs=inp, outputs=out)
